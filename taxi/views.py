@@ -79,7 +79,7 @@ class ManufacturerDeleteView(LoginRequiredMixin, generic.DeleteView):
 
     def get_success_url(self):
         return (self.request.GET.get("back")
-                or reverse_lazy("taxis:manufacturer-list"))
+                or reverse_lazy("taxi:manufacturer-list"))
 
 
 class CarCreateView(LoginRequiredMixin, generic.CreateView):

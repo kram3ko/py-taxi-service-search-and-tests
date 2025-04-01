@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Manufacturers | Taxi Service{% endblock %}
+{% block title %}Drivers | Taxi Service{% endblock %}
 {% load crispy_forms_filters %}
 
 {% block content %}
@@ -14,7 +14,7 @@
       {% include "includes/search_field.html" %}
     {% endblock %}
   <br>
-  <body>
+  <div>
   {% if driver_list %}
     <table class="table-group">
       <thead>
@@ -55,5 +55,5 @@
   {% else %}
     <p class="empty-list">🚫 No drivers in the service.</p>
   {% endif %}
-  </body>
+  </div>
 {% endblock %}

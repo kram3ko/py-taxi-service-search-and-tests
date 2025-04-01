@@ -68,7 +68,7 @@ class ModelsTests(TestCase):
         self.assertEqual(driver.get_absolute_url(), expected_url)
 
     def test_create_driver_with_license_number(self):
-        username = "test_name",
+        username = "test_name"
         first_name = "test_first"
         last_name = "test_last"
         password = "test_password"
